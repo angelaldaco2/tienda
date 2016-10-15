@@ -1,0 +1,42 @@
+		div.content
+        {
+            border: #000000 1px solid;
+            height: 185px;
+            overflow-y: auto;
+            width: 100%;
+			margin: 40px 0px 0px 0px;
+        }
+
+        .fixedHeader 
+        {
+            white-space: nowrap;
+        }
+
+        .fixedHeader tr 
+        {
+            height: auto;
+            position: absolute;
+			margin: -35px 25px 0px 0px;
+        }
+
+        .fixedHeader tr td 
+        {
+            background-color: #778899;
+            border: #000000 1px solid;
+            text-align: center;
+        }
+
+        tbody.scrollContent 
+        {
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 185px;
+        }
+
+        .scrollContent tr td 
+        {
+            /*background-color: #C0C0C0;
+            border: #000000 0px solid;*/
+            padding-right: 0px;
+            vertical-align: top;
+        }

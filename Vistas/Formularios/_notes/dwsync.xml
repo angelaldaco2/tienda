@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="addCategoria.php" server="192.168.1.74" local="130435187772030687" remote="130420626000000000" Dst="2" />
+<file name="addCliente.php" server="192.168.1.74" local="130435448585327950" remote="130435203600000000" Dst="2" />
+<file name="addColor.php" server="192.168.1.74" local="130435448585748229" remote="130435404000000000" Dst="2" />
+<file name="addDatosFacturacion.php" server="192.168.1.74" local="130435187772290855" remote="130433557200000000" Dst="2" />
+<file name="addMarca.php" server="192.168.1.74" local="130435448585818264" remote="130435239000000000" Dst="2" />
+<file name="addProducto.php" server="192.168.1.74" local="130435448596055059" remote="130435372800000000" Dst="2" />
+<file name="addSubcategoria.php" server="192.168.1.74" local="130435187772801173" remote="130420627800000000" Dst="2" />
+<file name="caja.php" server="192.168.1.74" local="130435187773021310" remote="130429424400000000" Dst="2" />
+<file name="consultarApartado.php" server="192.168.1.74" local="130435187773121412" remote="130430154600000000" Dst="2" />
+<file name="consultarCliente.php" server="192.168.1.74" local="130435448596375262" remote="130435389600000000" Dst="2" />
+<file name="consultarColor.php" server="192.168.1.74" local="130435448596405302" remote="130435402200000000" Dst="2" />
+<file name="consultarDatosFacturacion.php" server="192.168.1.74" local="130435187773781855" remote="130433559000000000" Dst="2" />
+<file name="consultarDetallesCliente.php" server="192.168.1.74" local="130435187774072027" remote="130426573200000000" Dst="2" />
+<file name="consultarDetallesDatosFacturacion.php" server="192.168.1.74" local="130435187774402230" remote="130427529600000000" Dst="2" />
+<file name="consultarDetallesProducto.php" server="192.168.1.74" local="130435448596695488" remote="130435253400000000" Dst="2" />
+<file name="consultarDetallesVenta.php" server="192.168.1.74" local="130435187774572345" remote="130426764600000000" Dst="2" />
+<file name="consultarGastos.php" server="192.168.1.74" local="130435187774672403" remote="130426875600000000" Dst="2" />
+<file name="consultarMarca.php" server="192.168.1.74" local="130435448596735532" remote="130435257600000000" Dst="2" />
+<file name="consultarProducto.php" server="192.168.1.74" local="130435448596785545" remote="130435257000000000" Dst="2" />
+<file name="consultarSubcategoria.php" server="192.168.1.74" local="130435448597025700" remote="130435220400000000" Dst="2" />
+<file name="consultarVenta.php" server="192.168.1.74" local="130435187775332859" remote="130426752600000000" Dst="2" />
+<file name="modificarApartado.php" server="192.168.1.74" local="130435187775512960" remote="130430122200000000" Dst="2" />
+<file name="modificarCategoria.php" server="192.168.1.74" local="130435187775633062" remote="130427644800000000" Dst="2" />
+<file name="modificarCliente.php" server="192.168.1.74" local="130435187775753142" remote="130426905600000000" Dst="2" />
+<file name="modificarColor.php" server="192.168.1.74" local="130435187776063350" remote="130427689800000000" Dst="2" />
+<file name="modificarDatosFacturacion.php" server="192.168.1.74" local="130435187776203425" remote="130427572800000000" Dst="2" />
+<file name="modificarMarca.php" server="192.168.1.74" local="130435187776323495" remote="130433509200000000" Dst="2" />
+<file name="modificarProducto.php" server="192.168.1.74" local="130435187776443588" remote="130429471200000000" Dst="2" />
+<file name="modificarSubcategoria.php" server="192.168.1.74" local="130435187776623703" remote="130427649000000000" Dst="2" />
+</dwsync>

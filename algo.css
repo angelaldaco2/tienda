@@ -1,0 +1,921 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+	
+/*
+		
+		COLIMEX POWERED BY CREATIVEING
+		Raul Osorio
+
+*/
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+* {margin: 0px; padding: 0px;}
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+body { font-family:Arial, Helvetica, sans-serif; font-size: 11px; background: url(../img/bgbody.png) #e4e4e4 repeat-x;  max-width: 100%; margin: 0 auto; min-width: 100%; height: 100%;}
+
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; text-decoration: none;}
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 0 0; padding: 0 0 0 0; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+li{ list-style: none;}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+
+button, input { line-height: normal; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled], input[disabled] { cursor: default; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+/* ==|== primary styles =====================================================
+   	Author: Raul Osorio - www.creativeing.com
+  	Project: Creativeing.com
+ 	========================================================================== */
+
+		/*Fuentes*/
+
+		@font-face {
+		    font-family: 'WebSymbolsRegular';
+		    src: url('websymbols/websymbols-regular-webfont.eot');
+		    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		        url('websymbols/websymbols-regular-webfont.woff') format('woff'),
+		        url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+		        url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		
+		@font-face{ 
+			font-family: 'WebSymbolsLigaRegular';
+				src: url('websymbols/websymbolsligaregular.eot');
+				src: url('websymbols/websymbolsligaregular.eot?#iefix') format('embedded-opentype'),
+					url('websymbols/websymbolsligaregular.woff') format('woff'),
+					url('websymbols/websymbolsligaregular.ttf') format('truetype'),
+					url('websymbols/websymbolsligaregular.svg#WebSymbolsRegular') format('svg');
+		}
+		
+
+		*{}
+		a{text-decoration: none !important; color: #fff; outline: 0px !important;}
+		
+		.applet{float: left; width: 0px !important; height: 0px !important;}		
+		
+		.required{background: url(../img/required.png) right no-repeat !important;}
+		
+		.download{float: left; text-decoration: none !important; color: #000; font-size: 50px; margin: 10px; border: 1px solid #333;  width: 140px; height: 110px; padding-top: 30px; text-align: center;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+		.download span{float: right; color: #000; width: 140px; font-family: 'Arial' !important; padding-top: 20px; font-size: 12px; height: 20px; text-align: center;}
+		.download:hover{color: #ccc; border: 1px solid #ccc; }
+		
+		
+		/*Login*/
+		body{background: #F0F0F0 url(/img/bg.gif) repeat -70% 0;}
+		
+			.formlogin{margin: 60px auto 0 auto; width: 500px;}
+				.formlogin h2{float: left; width: 500px; text-align: center; font-size: 34px; margin-bottom: 10px; color: #202020;}
+				.formlogin label{float: left; width: 460px; color: #A5A5A5; font-size: 20px; margin-bottom: 10px;}
+				.formlogin input{float: left; width: 458px; height: 50px; margin-bottom: 15px; border: 1px solid #151515; color: #A5A5A5; text-align: center; font-size: 18px; background: #202020; border: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+				
+				.bredondo{margin: 10px 0px 0px 195px !important; width: 70px !important; font-family: 'WebSymbolsRegular' !important; height: 70px !important; -moz-border-radius: 35px !important; -webkit-border-radius: 35px !important; border-radius: 35px !important;}
+				.bredondo:hover{ color: #fff;}
+				
+				.clog{float: left; background: #000; padding: 40px 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+				.clog a{float: left; width: 460px; text-align: center; margin-bottom: 10px; color: #A5A5A5;}
+				.clog a:hover{color: #fff;}
+				.clog p{float: left; color: #A5A5A5; font-size: 12px; text-align: justify; margin-bottom: 10px;}
+				
+				.cpre{float: left; background: #000; padding: 40px 20px; margin-top: 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+				.cpre a{float: left; text-decoration: none; color: #fff; width: 200px; background: #1a1a1a; padding-top: 35px; margin: 5px 15px; height: 65px; font-size: 22px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-align: center;}
+				.cpre a:hover{background: #ffba00; color: #fff;}
+				.cpre p{color: #fff; font-size: 18px; text-align: center;}
+				
+				.clalert{ background: #fff; padding: 5px 10px; color: #b80000 !important; font-size: 14px !important;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+				.clalert span{float: left; font-family: 'WebSymbolsLigaRegular' !important; margin-right: 10px;}
+				
+				.logologin{margin: 0 auto; background: url(../img/logogrande.png); display: block; width: 500px; height: 100px; margin-bottom: 30px;}
+				
+				.hcenter{text-align: center !important; font-size: 32px;}
+		
+		/*Barsup*/
+		.bar{position: fixed; width: 100%; height: 60px; background: #333; z-index: 1000;}
+		
+		header{margin: 0 auto 0 auto; width: 1000px; height: 50px;}
+		
+		nav{float: left; width: 800px; height: 60px;}
+		
+			nav ul{float: left; width: 800px; height: 60px;}
+			nav ul li{float: left; height: 50px; margin-right: 5px; padding: 5px 0px; cursor: point;}
+			nav ul li a{float: left; text-decoration: none; padding: 15px 10px 0px 10px; height: 35px; color: #AAA !important; font-size: 15px;}
+			nav ul li:hover{background: #3e3e3e;}
+			nav ul li a:hover{color: #fff !important;}
+		
+			
+			nav ul li:hover ul{display: block;}
+			nav ul li ul{display: none; position: absolute; margin-top: 50px; width: 200px; background: #3e3e3e;}
+			nav ul li ul li{float: left; width: 200px; height: 50px; background: #3e3e3e;}
+			nav ul li ul li a{float: left; color: #AAA; display: block; width: 180px;padding: 15px 10px 0px 10px; height: 35px;}
+			nav ul li ul li:hover{background: #2d2d2d; color: #2084c4 !important}
+			
+			.minilogo{float: left; width: 200px !important; height: 30px !important; background: url(../img/minilogo.png) no-repeat !important;}
+		
+		
+		.log{float: left; width: 200px; height: 35px; padding-top: 25px;} 
+		.log p{float: right; color: #aaa;}
+		.log span{float: right; margin: 0px 5px; color: #aaa;}
+		.log a{float: right; color: #aaa; font-family: 'WebSymbolsLigaRegular'; font-size: 15px;}
+		.log a:hover{color: #2084c4;}
+		
+		.nactive{color: #2084c4 !important;}
+		
+		.user{font-family: 'Helvetica' !important;}
+		
+		.nmensajes{position: absolute; font-family: 'Helvetica' !important; color: #fff; font-size: 10px; text-align: center; width: 16px; height: 10px; margin-top: 3px;}
+		.fs16{font-size: 18px !important; margin-top: -2px;}
+		
+		/*Contenedor principal*/
+		.boxc{margin: 0 auto 0 auto; width: 1000px; padding-top: 75px; margin-bottom: 20px;}
+		
+			.contenedor{float: left; width: 980px; padding: 10px; min-height: 600px; background: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);}
+		
+			.contenedor h1{float: left; width: 980px; font-size: 22px; height: 38px; padding: 12px 0px 0px 10px; font-family: 20px/1.9 "Lucida Grande", Lucida, Verdana, sans-serif; }
+			.contenedor h2{float: left; width: 570px; font-size: 19px; height: 38px; padding: 12px 0px 0px 10px; font-family: 20px/1.9 "Lucida Grande", Lucida, Verdana, sans-serif; color: #313131;}
+			
+			.contenedor h3{float: left; width: 975px;  margin-top: 10px; height: 47px; background: #333; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.contenedor h3 span{float: right; display: block; width: 45px;  font-size: 16px; text-align: center; padding: 13px 0px 0px 0px; height: 34px;  font-family: 'WebSymbolsLigaRegular'; color: #fff; background: #1a1a1a; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.contenedor h3 p{float: left; width: auto !important; margin: 0px !important; font-size: 16px; padding: 14px 0px 0px 5px; height: 33px; color: #fff; margin-left: 5px;}
+			.contenedor h3 span a{color: #fff;}
+			.contenedor h3 span a:hover{color: #2084c4;}
+			
+			
+			.contenedor h4 {float: left; width: 482px;  margin-top: 10px; height: 47px; background: #333; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.contenedor h4 span{float: right; display: block; width: 45px;  font-size: 16px; text-align: center; padding: 13px 0px 0px 0px; height: 34px;  font-family: 'WebSymbolsLigaRegular'; color: #fff; background: #1a1a1a; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.contenedor h4 p{float: left; width: auto !important; margin: 0px !important; font-size: 16px; padding: 14px 0px 0px 5px; height: 33px; color: #fff; margin-left: 5px;}
+			.contenedor h4 span a{color: #fff;}
+			.contenedor h4 span a:hover{color: #2084c4;}
+			
+			.contenedor p{float: left; font-size: 14px; margin: 10px 10px; width: 960px;}
+			.contenedor p a{color: #000; text-decoration: underline !important; }
+			
+				.menusup{float: left; width: 400px; height: 40px;}
+				.menusup li{float: right; height: 40px; margin-left: 5px;}
+				.menusup li a{float: left; text-align: center; display: block; padding: 13px 15px 0px 15px; height: 32px; font-family: 'WebSymbolsLigaRegular'; color: #3e3e3e; font-size: 18px;}
+				.menusup li a:hover{background: #2084c4 !important; color: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+				.menusup li a span{font-family: 'Helvetica' !important; margin-right: 10px !important;}
+				.msh{background: #2084c4 !important; color: #fff !important; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+	
+				.msvisible{width: 180px; background: #f1f1f1 !important;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding-bottom: 5px;}
+				
+			.menu{float: left; width: 980px; margin-top: 10px;}
+			.menu li{float: left; border-left: 5px solid; cursor:pointer; width: 475px; height: 110px; margin: 5px; background: #f9f9f9; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);}
+			.menu li a{float: left; display: block; width: 475px; height: 100px;}
+			.menu li a p{float: left; width: 95px; height: 85px; padding-top: 25px; font-family: 'WebSymbolsLigaRegular'; text-align: center; font-size: 30px; color: #3e3e3e; }
+			.menu li a span{float: left; width: 350px; height: 110px !important; color: #3e3e3e; text-align: center; font-size: 22px; }
+			.menu li a span p{float: left; font-family: sans-serif; font-size: 18px; width: 300px !important; text-align: left; height: 20px; margin: 0px; padding: 30px 0px 0px 0px!important;}
+			.menu li a span h2{float: left; width: 300px; font-size: 11px !important; color: #5b5b5b; text-align: left; margin-top: 10px !important; height: 30px; margin: 0px; padding: 0px !important;}
+			
+			.menu li:hover {border-color: #2084c4;}
+			.menu li:hover a p{color: #2084c4;}
+			.menu li:hover a span h2{color: #2084c4;}
+			
+			/*Form general*/
+			.fgeneral{float: left; width: 798px; margin: 20px 0px 0px 0px; border: 1px solid #f1f1f1; padding: 25px 90px 25px 90px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.fgeneral label{float: left; width: 133px; height: 25px; font-size: 16px; margin: 5px; text-align: right; padding-top: 15px;}
+			.fgeneral input{float: left; width: 233px; padding: 0px 5px; height: 38px; font-size: 14px; border: 1px solid #f1f1f1; background: #fff; margin: 5px; text-align: left; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.fgeneral select{float: left; width: 245px; font-size: 14px; height: 40px; margin: 5px; border: 1px solid #e0e0e0; background: none;}
+			.fgeneral textarea{float: left; width: 630px; font-size: 14px; padding: 5px 5px; height: 38px; border: 1px solid #f1f1f1; background: #fff; margin: 5px; text-align: left; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			
+			.fgeneral p{float: left; width: 798px !important;}
+			
+			.fgeneral h3{float: left; width: 100%; padding: 15px 10px 0px 10px; height: 35px; background: #333; margin-bottom: 5px; font-size: 16px; color: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.fgeneral h3 a{float: right; display: block; font-family: 'WebSymbolsLigaRegular'; color: #fff; margin-right: 10px; font-size: 14px;}
+			
+			.separator{float: left; width: 798px; height: 1px;}
+			.gbutton{float: right !important; margin: 10px 10px 0px 0px !important; background: #2084c4 !important; color: #fff; text-align: center !important; width: 150px !important; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.gbutton:hover{background: #2d2d2d !important;}
+	
+			.contform{float: left; width: 780px; margin-top: 20px;}
+			.contform label{width: 780px !important; text-align: center !important; font-size: 18px;}
+			.contform input{float: left; width: 780px; text-align: center; border: none !important; color: #000 !important; outline:0px !important;}
+			
+			/*Fgeneral popup*/
+			/*Form general*/
+			.fgeneralpop{position: absolute; background: #fff; width: 798px; margin: 60px 0px 0px 0px; border: 1px solid #f1f1f1; padding: 50px 90px 250px 90px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 0 8px #D0D0D0;}
+			.fgeneralpop label{float: left; width: 133px; height: 25px; font-size: 16px; margin: 5px; text-align: right; padding-top: 15px;}
+			.fgeneralpop input{float: left; width: 233px; padding: 0px 5px; height: 38px; border: 1px solid #f1f1f1; background: #fff; margin: 5px; text-align: center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.fgeneralpop select{float: left; width: 245px; height: 40px; margin: 5px; border: 1px solid #e0e0e0; background: none;}
+			
+			.fgeneralpop h3{float: left; width: 800px; padding-bottom: 5px; border-bottom: 1px solid #f1f1f1; margin-bottom: 15px; font-size: 16px;}
+			.fgeneralpop h3 a{float: right; font-family: 'WebSymbolsRegular'; color: #fff; margin-right: 10px; font-size: 14px;}
+			
+		
+				/*Form general mini*/
+				/*Form general*/
+				.fgeneralm{float: left; width: 469px; margin: 20px 0px 0px 0px; border: 1px solid #f1f1f1; padding: 0px 5px 20px 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+				.fgeneralm label{float: left; width: 133px; height: 25px; font-size: 16px; margin: 5px; text-align: right; padding-top: 15px;}
+				.fgeneralm input{float: left; width: 293px; padding: 0px 5px; height: 38px; border: 1px solid #f1f1f1; background: #fff; margin: 5px; text-align: center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+				.fgeneralm select{float: left; width: 245px; height: 40px; margin: 5px; border: 1px solid #e0e0e0; background: none;}
+
+				.gbm{margin-right: 40px !important;}
+				.ml15{margin-left: 15px !important;}
+				.fgigrand{font-size: 30px !important;}
+				
+				.fgeneralm li{float: left; width: 469px; min-height: 40px; border-bottom: 1px solid #f1f1f1; padding: 5px 0px;}
+				.fgeneralm li:hover{background: #fbfbfb;}
+				.fgeneralm li a{float: left; display: block; width: 100%; height: 100%; text-decoration: none; color: #000;}
+				.fgeneralm li span{float: left; display: block; width: 300px; font-size: 18px; padding-top: 8px; min-height: 32px;}
+				.fgeneralm li p{float: left; display: block; width: 169px; min-height: 40px; text-align: right; font-size: 30px;}
+				
+				.fgeneralm h3{float: left; width: 469px; margin-top: 10px; height: 47px !important; background: #333;}
+				.fgeneralm h3 a{float: right; display: block; width: 40px; margin-right: 0px; font-size: 16px; text-align: center; padding: 13px 0px 0px 0px; height: 34px; background: #BF1E2E; font-family: 'WebSymbolsRegular'; color: #fff;}
+				.fgeneralm h3 p{float: left; font-size: 16px; padding: 14px 0px 0px 5px; height: 33px; color: #fff; margin-left: 5px;}
+				
+				.fgmlist li{min-height: 30px !important;}
+				.fgmlist li a span{float: left; padding-top: 8px !important; min-height: 22px !important; font-size: 12px;}
+				
+				.boton{float: right; width: 100px;  background: #3e3e3e !important; color: #fff !important; padding: 12px 10px; text-decoration: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-align: center; margin: 10px 10px 0px 0px;}
+				.bred{background: #BF1E2E !important; color: #fff !important;}
+				
+				.lred{background: #fde9e9 !important; color: #a61a1a !important; }
+				
+				.desgloce{float: left; background: #f1f1f1 !important;}
+				.subdesgloce{float: left; background: #f9f9f9 !important; font-size: 12px !important;}
+				
+				.desclose{float: left; display: block; text-align: center; padding-top: 12px; width: 50px !important; height: 28px !important; font-family: 'WebSymbolsRegular';}
+				.condesclose{width: 250px !important;}
+				
+				#grafica{float: left; width: 960px;}
+				
+			.dnone{float: left; display: none;}
+			
+			.desc{float: left; width: 720px;}
+			
+			/*Emergente*/
+			.femergente{position: absolute; background: #fff; width: 695px; padding: 20px 20px 25px 20px; margin: 50px 0px 30px 120px; min-height: 240px; z-index: 100;  border: 1px solid #D0D0D0; -webkit-box-shadow: 0 0 8px #D0D0D0;}
+
+			.femergente h3{float: left; width: 695px; margin: 5px 0px 5px 0px; background: #515151; color: #fff; padding: 5px 3px 5px 8px; font-size: 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.important{background: #a83131 !important;}
+			.igreen{background: }
+			.femergente p{float: left; width: 100% !important; text-align: center; margin-top: 20px; font-size: 18px; margin-bottom: 50px;}
+			
+			.femergente input{padding: 0px 5px; height: 38px; border: 1px solid #f1f1f1; background: #fff; margin: 5px;}
+			.femergente a{float: left !important; margin-left: 10px !important; padding: 15px 5px 0px 5px !important; height: 21px; text-align: center; border: 1px solid #f1f1f1; background: #fff; margin: 5px; display: block;}
+			.femergente a:hover{color: #fff; background: #2d2d2d !important;}
+			
+			.dcontenido{float: left; width: 958px; padding: 10px; margin: 10px 0px 0px 0px; font-size: 13px; color: #808080; border: 1px solid #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.dcontenido li{float: left; margin: 0px 5px; font-size: 14px; color: #000;}
+			.dcontenido li span{ float: left; color: #808080; font-size: 14px; margin-right: 5px !important;}
+			.dcontenido li span a{ float: left; color: #000; font-size: 14px; margin-right: 5px !important;}
+			.dcontenido li p{float: left !important; color: #000; width: auto !important; margin: 0px 5px !important;}
+			
+			.list{float: left; margin: 10px 0px;}
+			.list li{float: left; width: 900px !important; margin: 5px 0px 0px 20px !important;} 
+			
+			.dsimbol{float: left; width: 968px; padding: 10px; margin: 10px 0px 0px 0px; font-size: 13px; color: #808080; }
+			.dsimbol li{float: left; margin: 0px 5px;}
+			.dsimbol li span{float: left; width: 30px; height: 30px;}
+			.dsimbol li p{float: left; padding: 0px !important; width: 100px !important; color: #000;}
+			
+			
+			.grandlist{width: 960px !important; margin-bottom: 10px !important;}
+			.grandlist span{font-size: 12px !important;}
+			.grandlist p{font-size: 12px !important;}
+			.ldelete{float: right !important; font-weight: bold; color: #000 !important;}
+			.ldelete a{text-decoration: none; color: #000;}
+			.ldelete a:hover{color: #930000;}
+			
+			.dcimportante{border: 1px solid #b80000 !important;}
+			.dcimportante li p{color: #b80000 !important;}
+			
+			.resalt{font-size: 18px !important; background: #2084c4; color: #fff !important; padding: 2px !important; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			
+			
+			.identidad{float: left; background: #f1f1f1; width: 958px; height: 60px; padding: 10px; margin: 10px 0px 0px 0px; font-size: 13px; color: #808080; border: 1px solid #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+				background: #ffffff; /* Old browsers */
+				background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+			}
+			
+			.identidad img{float: left; width: 60px; height: 60px;  border: 1px solid #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.identidad h4{float: left; width: 880px !important; text-align: right; height: 20px; font-size: 16px; padding-top: 10px; margin-left: 10px; background: none !important;}
+			.identidad span{float: left; width: 880px; height: 30px; text-align: right; font-size: 13px; margin-left: 10px;}
+			.identidad a{float: left; width: 60px;  background: #fff; height: 50px;  border: 1px solid #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-align: center; color: #000; font-size: 30px; font-family: 'WebSymbolsLigaRegular';}
+			.sintop{padding-top: 0px !important; height: 60px !important;}
+			
+			.fimportante{float: left; width: 665px; margin-bottom: 10px; padding: 0px 10px;}
+			.fimportante label{float: left; width: 100px !important; height: 15px !important; padding: 15px 0px 0px 0px;}
+			.fimportante input{float: left; width: 200px !important; height: 30px !important; margin-right: 10px;}
+			.fimportante textarea{float: left; width: 563px !important; border: 1px solid #f1f1f1; background: #fff; min-height: 30px !important;}
+			
+			/*Lista general*/
+			.ulg{float: left; width: 958px; padding: 10px; margin-top: 10px; border: 1px solid #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.ulg li{float: left; width: 960px; height: 30px; border-bottom: 1px solid #f1f1f1;}
+			.ulg li a{float: left; display: block; width: 960px; height: 40px;}
+			.ulg li a p{float: left; margin: 0px !important; height: 22px; padding-top: 8px; color: #3e3e3e; width: 860px; font-size: 16px;}
+			.ulg li a span{float: left; display: block; width: 100px; text-align: right; height: 22px; padding-top: 8px; color: #000;}
+			.ulg li:hover{background: #fafafa;}
+			
+			.ulg h3{float: left; width: 948px; color: #fff; background: #3e3e3e; height: 27px; margin-bottom: 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			
+			/*Lista productos reglones*/
+			.ulp{float: left; width: 958px; padding: 10px; margin-top: 10px; border: 1px solid #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.ulp li{float: left; width: 960px; min-height: 31px; border-bottom: 1px solid #f1f1f1;}
+			.ulp li a{float: left; display: block; width: 960px;  color: #000;}
+			.ulp li span{float: left; cursor: pointer; text-align: center; display: block; min-height: 15px; padding-top: 8px; padding-bottom: 8px; font-size: 13px;}
+			.ulp li span a{float: left; display: block; width: 100% !important; color: #000;}
+			.ulp li span a:hover{color: #000;}
+			.ulp li:hover{background: #fafafa;}
+			.ulp li a span a{float: left; width: 100% !important;}
+			.ulp li a span p{float: left; width: 60px !important; margin: 0px !important; padding: 8px 0px 0px 0px !important; min-height: 22px !important;} 
+			
+			.ulp li span .spinput{float: left; margin: 0px 10px 0px 10px !important; width: 80px !important; height: 24px !important;}
+			
+			.ulp .pad span{padding-top: 18px !important;}
+			
+			.usepara{float: left; width: 100% !important; background: #f1f1f1; height: 3px !important;}
+			
+			
+			.ulphorario{border-bottom: 2px solid #ccc !important;}
+			.ulphorario span{color: #AAA !important; font-size: 11px !important;}
+			
+			.ulpmeds{border-bottom: 2px solid #ccc !important;}
+			.ulpmeds span{color: #AAA !important; font-size: 11px !important;}
+			
+			/*Lista media*/
+			/*Lista productos reglones*/
+			.ulpm{float: left; width: 460px; padding: 10px; margin-top: 10px; border: 1px solid #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.ulpm li{float: left; width: 460px; min-height: 30px; border-bottom: 1px solid #f1f1f1;}
+			.ulpm li a{float: left; display: block; width: 460px; color: #000;}
+			.ulpm li span{float: left; cursor: pointer; text-align: center; display: block; min-height: 14px; padding-top: 8px; padding-bottom: 8px; font-size: 13px;}
+			.ulpm li span a{float: left; display: block; width: 100% !important; color: #000;}
+			.ulpm li span a:hover{color: #000;}
+			.ulpm li:hover{background: #fafafa;}
+			.ulpm li a span a{float: left; width: 100% !important; min-height: 30px !important; }
+			
+			.ulpm li a span p{float: left; margin: 0px; margin-left: 20px !important; width: 20px !important; padding: 0px;  background: #86bb2f; color: #fff; font-size: 12px !important; height: 14px; padding: 3px 0px;  -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+			.ulpm li div span p{float: left; margin: 0px; margin-left: 20px !important; width: 20px !important; padding: 0px;  background: #86bb2f; color: #fff; font-size: 12px !important; height: 14px; padding: 3px 0px;  -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+		
+			/*Lista para grupos*/
+			.ulpa{float: left; width: 958px; padding: 10px; margin-top: 10px; border: 1px solid #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.ulpa li{float: left; width: 960px; min-height: 30px; border-bottom: 1px solid #f1f1f1;}
+			.ulpa li a{float: left; display: block; width: 960px; min-height: 30px; color: #000;}
+			.ulpa li span{float: left; cursor: pointer; text-align: center; display: block; min-height: 14px; padding-top: 8px; padding-bottom: 8px; font-size: 11px;}
+			.ulpa li span a{float: left; display: block; width: 100% !important; min-height: 30px !important; color: #000;}
+			.ulpa li a span a{float: left; width: 100% !important; min-height: 30px !important;}
+			.ulpaspan{float: left; padding-top: 25px !important; min-height: 45px !important; font-size: 18px !important;}
+			.ulpaspan:hover{background: #f1f1f1; font-weight: bold; font-size: 20px !important;}
+			.ulpaspanname{float: left; padding-top: 15px !important; min-height: 40px !important; font-size: 16px !important; text-align: left !important;}
+			.ulpaspanname:hover{background: #fff !important; font-weight: bold;}
+			.ulpaspanname p{float: left; width: 98% !important; padding-left: 2% !important; margin: 0px 0px 10px 0px !important;}
+			
+			
+			.soption{margin-top: 15px;}
+			
+			.ulpimgcontent{width: 60px !important; height: 60px !important; padding: 0px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #f1f1f1;}
+			.ulpimg{position: absolute; width: 60px !important; height: 60px !important; margin: 0px 0px 0px -30px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.ulpimg:hover{width: 180px !important; height: 180px !important; margin: -60px 0px 0px -90px; z-index: 100; border: 3px solid #f1f1f1; -webkit-box-shadow: 1 2 8px #f1f1f1;  -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px;}
+			
+			.s100 input{float: left; width: 90px !important; margin-top: -9px !important; text-align: center; height: 30px !important; border: 1px solid #f1f1f1; background: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.sinput{padding: 2px  0px !important;}
+			.obs{float: left;  margin-top: -9px !important; width: 190px !important; text-align: center; height: 30px !important; border: 1px solid #f1f1f1; background: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.nohoverbg:hover{background: #fff !important;}
+			
+			.ulp h3{float: left; width: 958px; color: #fff; background: #3e3e3e; height: 27px; margin-bottom: 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			
+			
+			/*Arbol*/
+			.ula{float: left; width: 960px; padding: 10px; margin-top: 10px;}
+			.ula li{float: left; width: 960px; min-height: 30px;}
+			.ula li span{float: left; width: 28px !important;  border: 1px solid #fff; font-family: 'WebSymbolsLigaRegular' !important; text-align: center; cursor:pointer; min-height: 22px; padding-top: 6px; font-size: 15px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px;}
+			.ula li span:hover{border: 1px solid #000;}
+			.ula li a{float: left;  color: #000; padding: 8px 0px 0px 10px; min-height: 22px; width: 910px; font-size: 14px; margin-left: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px;}
+			.ula li a p{float: right !important; padding: 0px !important; margin: 0px !important; width: 30px !important;}
+			
+			.ula li a:hover{background: #f1f1f1 !important;}
+		 	
+			.ula ul{float: left; width: 900px; margin-left: 60px;}
+			.ula ul li{float: left; width: 900px; min-height: 30px;}
+			.ula ul li span{float: left; width: 28px !important;  border: 1px solid #fff; font-family: 'WebSymbolsLigaRegular' !important; text-align: center; cursor:pointer; min-height: 22px; padding-top: 6px; font-size: 15px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px;}
+			.ula ul li span:hover{border: 1px solid #000;}
+			.ula ul li a{float: left; color: #000; padding: 8px 0px 0px 10px; min-height: 22px; width: 850px; font-size: 14px; margin-left: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px;}
+			.ula ul li a p{float: right !important; margin: 0px !important; width: 50px !important; text-align: center; min-height: 22px; padding: 0px 0px 0px 0px !important; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			
+			
+			.ula ul ul{float: left; width: 840px; margin-left: 60px;}
+			.ula ul ul li{float: left; width: 840px; min-height: 30px;}
+			.ula ul ul li span{float: left; width: 28px !important;  border: 1px solid #fff; font-family: 'WebSymbolsLigaRegular' !important; text-align: center; cursor:pointer; min-height: 22px; padding-top: 6px; font-size: 15px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px;}
+			.ula ul ul li span:hover{border: 1px solid #000;}
+			.ula ul ul li a{float: left;  color: #000; padding: 8px 0px 0px 10px; min-height: 22px; width: 820px; font-size: 14px; margin-left: 10px;}
+			.ula ul ul li a p{float: right !important; margin: 0px !important; width: 50px !important; text-align: center; min-height: 22px; padding: 0px 0px 0px 0px !important; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			
+			
+			.h{background: #f1f1f1; color: #000 !important;}
+			.hh{background: #f9f9f9; color: #000 !important;}
+			.h:hover{background: #f1f1f1 !important;}
+			.aleft{text-align: left !important}
+			.aright{text-align: right !important}
+			.acenter{text-align: center !important;}
+			.negativo{color: #BF1E2E !important;}
+			.fright{float: right !important;}
+			
+				.s30{width: 30px !important; font-size: 9px !important;}
+				.s100{width: 100px !important;}
+				.s200{width: 200px !important;}
+				.s260{width: 260px !important;}
+				.s40{width: 40px !important;}
+				.s300{width: 300px !important;}
+				.s400{width: 400px !important;}
+				.s500{width: 500px !important;}
+				.s600{width: 600px !important;}
+				.s700{width: 700px !important;}
+				.s800{width: 800px !important;}
+				.s60{width: 60px !important;}
+				.s50{width: 50px !important;}
+				.smed{width: 430px !important;}
+				.s160{width: 160px !important;}
+				.s960{width: 960px !important;}
+				.s92{width: 92px !important;}
+				.s460{width: 460px !important;}
+				.s80{width: 80px !important;}
+				
+				.zooml:hover{font-size: 12px !important; font-weight: bold; cursor: pointer;}
+				
+				.close{font-family: 'WebSymbolsRegular' !important; text-align: center !important;}
+				
+				
+			.reportes{float: left; width: 968px; padding: 10px; margin-top: 10px;}
+			.reportes li{float: left; width: 150px; height: 120px; margin: 5px; background: #333; border: 2px solid #333; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);}
+			.reportes li:hover{border: 2px solid #BF1E2E;}
+			.reportes li a{float: left; width: 150px; height: 120px;}
+			.reportes li a p{float: left; width: 150px; height: 35px; text-align: center; font-size: 18px; color: #fff; padding-top: 15px;}
+			.reportes li a span{float: left; display: block; width: 130px; height: 50px; background: #3e3e3e; color: #aaa; padding: 10px; font-size: 13px; text-align: center;}
+
+		
+		footer{float: left; width: 100%; height: 25px; padding-top: 15px; margin-top: 20px;}
+		footer p{margin: 0 auto 0 auto; width: 1000px; text-align: center; color: #202020;}
+		footer p a{color: #202020 !important;}
+		
+		
+		/*Impresion de tickets*/
+		.ftickets{float: left; width: 100%; font-family: Arial !important;}
+		.ftickets img{margin-left: 65px;}
+		.ftickets h2{float: left !important; text-align: center !important; width: 100% !important; font-family: Arial;}
+		.ftickets h3{float: left; text-align: center !important; width: 100% !important; font-family: Arial;}
+		.ftickets p{float: left; text-align: center !important; width: 100% !important; font-family: Arial;}
+		
+			.lticket{float: left; width: 100% !important; font-family: Arial;}
+			.lticket li{float: left; width: 100% !important; font-family: Arial;}
+			.lticket li span{float: left; display: block; width: 25%; font-family: Arial;}
+			.ltdes{float: left; display: block; width: 50% !important; font-family: Arial;}
+		
+		/*Mensajes*/
+		.message{position:absolute; width: 960px; padding: 10px 10px 10px 10px; margin: 10px auto 20px auto; text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+			background: #111; background: rgba(20, 20, 20, .9); -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 2px 4px  rgba(0, 0, 0, .25);
+			 -moz-box-shadow: 0 2px 4px rgba(0,0,0,.25); box-shadow: 0 2px 4px  rgba(0, 0, 0, .25); margin-bottom: 5px;}
+		.message-text {float: left; display: block; margin-right: 10px; width: 940px; color: #fff; font-size: 16px; line-height: 12px; }
+		.close{float: right; width: 20px; color: #fff !important; text-align: right; font-family: 'WebSymbolsRegular'; }
+		#mensaje span{float: left; display: block; font-weight: bold; font-size: 22px; color: #fff; width: 920px !important; margin-bottom: 5px !important;}
+		.msred{color: #b80000 !important;}
+		.msgreen{color: #86bb2f !important;}
+		.msblue{color: #029ab5 !important;}
+		.msgray{color: gray !important;}
+		.msyellow{color: yellow !important;}
+		.bgred{background: #fca19a !important;}
+		.bggreen{background: #e1ffc9 !important;}
+		.bgblue{background: #029ab5 !important;}
+		.bggray{background: #ccc !important;}
+		.bgyellow{background: #fbfc9a !important;}
+		.msorange{color: #f97b00 !important;}
+		.msblack{color: #000 !important;}
+		.bgblack{background: #333 !important;}
+		
+		/*Alert*/
+		.alert{position:fixed; width: 400px; height: 200px; top:50%; left:50%; margin-top: -100px; margin-left: -200px; text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+			background: #111; background: rgba(20, 20, 20, .9); -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 2px 4px  rgba(0, 0, 0, .25);
+			 -moz-box-shadow: 0 2px 4px rgba(0,0,0,.25); box-shadow: 0 2px 4px  rgba(0, 0, 0, .25); margin-bottom: 5px;}
+			 
+		
+		/*Botones*/
+		.botones{float: left; width: 510px; min-height: 100px; border: 1px solid #f1f1f1; padding: 20px 0px; margin: 20px 0px 0px 223px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+		.botones li{float: left; width: 150px; height: 150px; margin: 10px; background: #2084c4; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+		.botones li a{float: left; width: 150px; height: 150px; font-size: 40px; color: #fff; text-align: center; padding-top: 50px;}
+			
+		.websymbol{font-family: 'WebSymbolsLigaRegular' !important;}
+		
+			/*breadcrumbs*/
+			.breadcrumbs{float: left; width: 700px; height: 30px; margin-bottom: 20px;}
+			.breadcrumbs li{float: left; height: 30px; padding: 0px 5px;}
+			.breadcrumbs li a{float: left; text-decoration: none; width: 100%; display: block; padding-top: 12px; height: 22px; text-align: left; color: #000;}
+			.breadcrumbs li a:hover{color: #2084c4;}
+			.bultimo{background: #f1f1f1; padding: 0px 10px; text-align: center !important; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			
+			
+			/*menusolicitud*/
+						.menusolicitud{float: left; width: 960px; height: 30px; margin-bottom: 20px;}
+						.menusolicitud li{float: left; height: 40px; border: 1px solid #333; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin: 0px 3px;}
+						.menusolicitud li a{float: left; text-decoration: none; display: block; padding: 12px 5px 6px 5px;  height: 22px; text-align: left; color: #333; font-size: 16px;}
+						.menusolicitud li a:hover{color: #fff;}
+						.menusolicitud li:hover{background: #333 !important;}
+						.msselect{background: #333 !important; color: #fff !important;};
+
+			.notifylinks{float: left; width: 978px; min-height: 80px; margin: 10px !important; text-shadow: 0 -1px 0 rgba(0, 0, 0, .5); background: #373737;  -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 2px 4px  rgba(0, 0, 0, .25)}
+			.notifylinks div{float: left; width: 900px; height: 100%; background: #373737; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;}
+			.notifylinks h2{color: #2576b0; padding-bottom: 0px !important;}
+			.notifylinks p{float: left; color: #f1f1f1; margin: 0px 0px 10px 10px !important;}
+			.notifylinks a{float: left; display: block; width: 78px; min-height: 60px !important; padding-top: 25px; background: #373737; color: #f1f1f1; font-family: 'WebSymbolsLigaRegular' !important; text-align: center; font-size: 30px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;}
+			.notifylinks a:hover{color: #2576b0 !important;}
+			
+			
+			.notify{float: left; background: #fff !important; border: 1px solid #ccc; border-top: none !important; width: 400px; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.notify li{float: left; width: 380px; padding: 10px;}
+			.notify li a{float: left; display: block; color: #333; width: 100%; height: 100%;}
+			.notify li a span{float: left; font-family: 'WebSymbolsLigaRegular' !important; margin-right: 10px;}
+			.notify li:hover{background: #ccc; color: #000 !important;}
+			.notify li:hover a{background: #ccc; color: #000 !important;}
+			
+			
+			.contmsjg{position: absolute; background: url('../img/contmsjg.png') no-repeat; width: 400px;  margin: 40px 0px 0px 630px; padding-top: 15px;}
+			
+			.notifytodos{text-align: center !important;}
+
+			/*Estilos para encuestas*/
+			.encuestas{float: left; width: 980px; margin: 20px 0px 0px 0px;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.indicador {padding: 10px 0px;}
+			.encuestas p{float: left; width: 978px; margin-top: 20px; font-size: 16px;}
+			.encuestas h3{float: left; width: 960px; padding: 15px 10px 0px 10px; height: 35px; background: #333; margin-bottom: 5px; font-size: 16px; color: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.encuestas h3 a{float: right; font-family: 'WebSymbolsLigaRegular'; color: #fff; margin-right: 10px; font-size: 20px;}
+			.prelikert{float: left; border: 1px solid #f1f1f1; margin: 7px 2px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.prelikert:hover{background: #f1f1f1;}
+			.likert{float: left; width: 968px; margin: 10px 0px; padding: 0px 5px; border: 1px solid; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.likert p{float: left; width: 958px;}
+			.likert label{float: left; width: auto; padding: 8px 2px 0px 2px; text-align: center; height: 22px; font-size: 12px;}
+			.likert span{float: left; display: block; width: 30px; cursor: pointer; padding-top: 7px; text-align: center; height: 23px; border: none !important; font-size: 13px; font-family: 'WebSymbolsLigaRegular' !important; -moz-border-radius: 5px; border-radius: 5px; background: none;}
+			
+			.gresp div label {min-width: 120px !important;}
+				
+			.abierta textarea{float: left; border: 1px solid; padding: 10px; margin: 2px; width: 950px; height: 50px; font-size: 14px; color: #1a1a1a; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+
+
+
+			.multiple{float: left; width: 968px; margin: 10px 0px; padding: 0px 5px; border: 1px solid; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.multiple p{float: left; width: 958px;}
+
+
+
+			/*Listados con filtro*/
+			.lfilter{float: left; width: 980px; margin: 20px 0px 0px 0px;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.lfilter h3 p{float: left; width: 400px !important; margin-top: 0px !important; padding-top: 0px !important; font-size: 16px;}
+			.lfilter span{float: left !important;  width: 100px; font-family: 'Helvetica' !important; margin-top: 0px !important; padding-top: 0px !important; text-align: center; font-size: 13px;}
+			.lfilter h3{float: left; width: 960px; padding: 15px 10px 0px 10px; height: 35px; background: #333; margin-bottom: 5px; font-size: 16px; color: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.lfilter h3 a{float: right; font-family: 'WebSymbolsLigaRegular'; color: #fff; margin-right: 10px; font-size: 20px;}
+
+			.lfilter .spanlight{float: left; width: 150px !important; font-size: 12px !important; margin-left: 350px; font-weight: 100 !important; background: #eeeeee !important; color: #000 !important; height: 20px !important; padding-top: 5px !important; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+
+
+			/*Reports*/
+			.reports{float: left; width: 960px; padding: 10px;}
+			.reports li{float: left; width: 298px; height: 100px; margin: 10px; border: 1px solid #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.reports li:hover{border-color: #000;}
+			.reports li a{float: left; width: 100%; height: 100%; display: block;}
+			.reports li a span{float: left; width: 80px; height: 70px; font-family: 'WebSymbolsLigaRegular'; padding-top: 30px; font-size: 30px; text-align: center; color: #000;}
+			.reports li a h2{float: left; width: 218px; font-size: 16px; padding: 20px 0px 0px 0px; min-height: 30px;}
+			.reports li a p{float: left; width: 218px !important; margin: 0px; font-size: 12px; color: #2a2a2a;}
+			
+			
+			/*Formulario para el horario*/
+			.fdias{float: left; width: 798px; margin: 20px 0px 0px 0px; border: 1px solid #f1f1f1; padding: 25px 90px 25px 90px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.fdias label{float: left; width: 140px; height: 25px; font-size: 16px; margin: 5px; text-align: center; padding-top: 15px;}
+			.fdias select{float: left; width: 140px; font-size: 14px; height: 40px; margin: 5px; border: 1px solid #e0e0e0; background: none;}
+			
+			
+			.fdias h3{float: left; width: 100%; padding: 15px 10px 0px 10px; height: 35px; background: #333; margin-bottom: 5px; font-size: 16px; color: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.fdias h3 a{float: right; display: block; font-family: 'WebSymbolsLigaRegular'; color: #fff; margin-right: 10px; font-size: 14px;}
+			
+			.horario{float: left; width: 958px; padding: 10px; margin-top: 10px; border: 1px solid #f1f1f1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.horario li{float: left; width: 958px; min-height: 30px; cursor:pointer; margin: 0px 5px; }
+			.horario li span{float: left; width: 150px; padding-top: 8px; text-align: center; min-height: 22px; font-size: 12px; color: #000;}
+			.horario li span:hover{background: #f1f1f1 !important;}
+			
+			.hhorario{background: #f1f1f1; color: #000 !important; font-size: 16px;}
+			.hhora{float: left; width: 80px !important;}
+			
+			/*Estilos beca alimenticia*/
+			.cpregunta{float: left; width: 958px; border: 1px solid #f1f1f1; padding: 5px; margin-top: 10px; padding-bottom: 10px;}
+			.botonespreg{float: left; width: 760px;}
+			.botonespregsino{float: left; width: 958px; margin-top: 40px;}
+
+				/*botones preguntas*/
+				.bpsino{float: left; padding: 0px 30px !important; margin: 0px 180px; height: 30px; background: #fff !important; border: 1px solid #000; color: #000 !important;}
+				.bpsino:hover{float: left; background: #e1ffc9 !important;}
+				
+				.bplikert{float: left; padding: 0px 10px !important; margin: 0px 40px; height: 30px;}
+				.bplikert2{float: left; padding: 0px 10px !important; margin: 0px 1px; height: 30px;}
+				.abpsino{float: left; padding: 0px 30px !important; margin: 0px 100px; font-size: 11px; padding-top: 10px !important; height: 20px !important;}
+	
+				.bplikertmul{float: left; width: auto !important; padding: 0px 10px !important; margin: 10px 5px; height: 30px; text-align: center; background: none !important; border: 1px solid #000; color: #000 !important;}
+				.bplikertmul:hover{background: #e1ffc9 !important;}
+	
+				.coment{float: left; width: 480px; border: 1px solid #e0e0e0; height: 80px !important; border:; margin: 10px 25px 0px 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 10px;}
+				.pvalor{float: left; width: 80px; font-size: 18px; margin: 10px 0px 0px 220px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+			
+				.pbeca{float: left; text-align: center; font-size: 22px !important; margin: 20px 0px !important;}
+				
+				.btnfin{float: right !important; margin: 10px 0px 0px 0px !important; background: #3a3a3a !important; color: #f1f1f1; height: 28px; font-size: 15px; padding-top: 12px; text-align: center !important; width: 150px !important; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;} 
+				.btnfin:hover{ color: #f1f1f1; background: #1a1a1a !important;} 
+				
+			
+				.infopre{float: left; width: 480px; padding: 10px; margin: 10px 0px 10px 0px; background: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);}
+				.infopre p{float: left; font-size: 16px;}
+				
+				
+				
+			.ppreinscripcion{float: left; width: 960px; }
+			.ppreinscripcion li{float: left; width: 318px; height: 100px;  border: 1px solid #333; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+			.ppreinscripcion li a{float: left; width: 318px; height: 100px; color: #000;}
+			.ppreinscripcion li a span{float: left; width: 28px; height: 100px; text-align: center; font-size: 20px;}
+			.ppreinscripcion li a p{float: left; width: 290px; height: 100px; margin: 0px; padding: 0px; text-align: center; font-size: 30px;}
+			
+			
+			.espere{position: absolute; width: 300px; height: 120px; margin: 200px 350px; background: #000; z-index: 1000; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 2px 4px  rgba(0, 0, 0, .25)}
+			.espere h3{float: left; width: 300px; margin-top: 40px; font-size: 22px; text-align: center; background: #000 !important; color: #fff;}
+			.espere h3 p{float: left; margin-right: 10px; padding-left: 20px; font-size: 35px; color: #fff; background: #000 !important; font-family: 'WebSymbolsLigaRegular' !important;}
+			
+			
+			.credencial{float: left; width: 980px;}
+			.credencial img{float: left; width: 600px !important; height: 400px !important; margin: 20px 0px 0px 190px;}
+			
+			.reticula{float: left; width: 94px; margin: 0px 5px;}
+			.reticula li{float: left; width: 94px; margin: 2px; border: 1px solid #1a1a1a; height: 100px;}
+			.reticula li a{float: left; width: 92px; height: 100px; padding: 2px; }
+			.reticula li a h2{float: left; color: #3a3a3a; font-size: 10px !important; width: 92px; text-align: center; padding: 0px; margin: 0px;}
+			
+			.reticula p{float: left; width: 94px; margin: 2px 0px; padding: 0px; text-align: center; color: #3a3a3a; font-size: 10px;}
+			.reticuladatos{float: left; width: 92px !important; height: 15px;}
+			.reticuladatos li{float: left; width: 28px; border: none; height: 13px; margin: 0px; color: #3a3a3a; text-align: center; font-size: 9px; padding-top: 2px;}
+			
+			.demanda{position: absolute; margin: 83px 0px 0px -2px; padding-top: 2px; width: 94px; height: 13px; background: #029ab5; text-align: center;}
+			
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: #000 !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+
+/* ==|== Others ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+pre{float: left; width: 958px; margin: 10px 0px; padding: 10px;  border: 1px solid #f1f1f1;}
+	
+	
